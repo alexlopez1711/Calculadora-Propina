@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Lopez">
+	<meta name="description" content="ayuda a saber los porcentajes ganados por cada garzon">
+    <meta name="keywors" content="calculadora de propinas de garzones, propina de garzones,como saber montos de propina">
+    <meta name="copyright" content="calculadoras para garzones">
+	<link rel="icon" type="text/css" href="todo/barman.png">
+    <link rel="stylesheet" href="todo/newpropina.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Calculadora de Propinas</title>
+</head>
+<body>
+    <div  id="inicio22" class="inicio22">
+        
+   <h1 class="animate__animated animate__flip"><img src="todo/camarera.png" height="50" width="50" class="animate__animated animate__backInLeft"><span class="animate__animated animate__rubberBand">Propinas</span><img src="todo/camarero.png" height="50" width="50" class="animate__animated animate__backInRight"></h1>
+   <div class="montos">
+    <h2 class="montos__totales">Total en Efectivo<br><input type="text"  class="input" id="totalefectivo" ></h2>
+    <h2 class="montos__totales">Total en Débito <br><input type="text"   class="input" id="totaldebito"></h2>
+   </div>
+
+   <div class="garzonestotales">
+    <h3>Garzones 2000 <button onclick="restarN1()" class="restar"><img src="todo/menos1.png" height="12" width="12"></button><input type="number" id="doslucas" class="garzones__en--turno input2"><button onclick="sumarN1()"  class="sumar"><img src="todo/mas1.png" height="12" width="12"></h3>
+    <h3>Garzones 25% <button onclick="restarN2()" class="restar"><img src="todo/menos1.png" height="12" width="12"></button><input type="number" id="cdg25" class="garzones__en--turno input2"><button onclick="sumarN2()"   class="sumar"><img src="todo/mas1.png" height="12" width="12"></button></h3>
+    <h3>Garzones 50% <button onclick="restarN3()"   class="sumar"><img src="todo/menos1.png" height="12" width="12"></button><input type="number" id="cdg50" class="garzones__en--turno input2"><button onclick="sumarN3()" class="restar"><img src="todo/mas1.png" height="12" width="12"></button></h3>
+    <h3>Garzones 75% <button onclick="restarN4()"   class="sumar"><img src="todo/menos1.png" height="12" width="12"></button><input type="number" id="cdg75" class="garzones__en--turno input2"><button onclick="sumarN4()" class="restar"><img src="todo/mas1.png" height="12" width="12"></button></h3>
+    <h3>Garzones 100% <button onclick="restarN5()"  class="sumar"><img src="todo/menos1.png" height="12" width="12"></button><input type="number" id="cdg100" class="garzones__en--turno input2"><button onclick="sumarN5()" class="restar"><img src="todo/mas1.png" height="12" width="12"></button></h3>
+   </div>
+   <button  onclick= "calcularYMostrarModal()" class="btn "><img src="todo/bolsa1.png" height="50" width="50"></button><br>
+   </div>
+
+   
+<div  id="myModal" class="modal">
+<div class="totales_ganados modal-content">
+
+<h2 class="coci_gar">Cocina</h2>
+<div class="montos">
+    <form>
+<h3 class="montos__totales"><label>Debito</label><input  id="cocinadebito" class="garzones__en--turno2" readonly="true" value="0"></h3>
+<h3 class="montos__totales"><label>Efectivo</label><input  id="cocinaefectivo" class="garzones__en--turno2" readonly="true" value="0"></h3>
+<h3 class="montos__totales"><label>Total</label><input  id="cocinatotal" class="garzones__en--turno2" readonly="true" value="0"></h3>
+</form></div>
+<h2 class="coci_gar">Garzones</h2>
+<div class="montos"><form>
+<h3 class="montos__totales"><label>Debito</label><input  id="garzonesdebito" class="garzones__en--turno2" readonly="true" value="0"></h3>
+<h3 class="montos__totales"><label>Efectivo</label><input  id="garzonesefectivo" class="garzones__en--turno2" readonly="true" value="0"></h3>
+<h3 class="montos__totales"><label>Total</label><input   id="garzonestotal" class="garzones__en--turno2" readonly="true" value="0"></h3>
+</form></div>
+<h2 class="coci_gar">Ganado Por Garzon</h2>
+<br><form>
+<h3 class="hola2"> <label>Total 2000</label><input  id="doslucas1" class="garzones__en--turno2" readonly="true" value="0"> </h3>
+<h3 class="hola2"><label>Garzon 25%</label><input   id="gpg25" class="garzones__en--turno2" readonly="true" value="0"> </h3>
+<h3 class="hola2"><label>Garzon 50%</label><input  id="gpg50" class="garzones__en--turno2" readonly="true" value="0"> </h3>
+<h3 class="hola2"><label>Garzon 75%</label><input  id="gpg75" class="garzones__en--turno2" readonly="true" value="0"> </h3>
+<h3 class="hola2"><label>Garzon 100%</label><input  id="gpg100" class="garzones__en--turno2" readonly="true" value="0"></h3><br><img id="miImagen" src="todo/defaul.gif" class="itm" height="100" width="90"> <br>
+</form><button  onclick="closeModal()" class="btn1"><img src="todo/salida.png" height="50" width="50"></button>
+
+
+</div></div>
+
+
+    <script src="todo/newpropina.js"></script>
+</body>
+</html>

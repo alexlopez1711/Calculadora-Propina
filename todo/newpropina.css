@@ -1,0 +1,214 @@
+html,
+body {
+  
+  margin: 0;
+  overflow-x: auto;
+  
+}
+
+@font-face{
+    font-family: 'mifuente';
+    src: url(../fuentes/Mochalosta.ttf);
+}
+
+.garzonestotales{
+  color: black;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+  
+  }
+
+.garzonestotales h3{
+  margin: 4%;
+}
+
+
+@media (max-width: 340px) {
+  .garzonestotales {
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    
+  }
+
+  /* Estilos específicos para los h3 */
+  .garzonestotales h3 {
+    margin: 4% 0; /* Ajusta el margen superior e inferior */
+    text-align: center; /* Centra el texto */
+     /* Muestra los h3 en bloque */
+  }
+
+  /* Estilos específicos para los input y botones */
+  .garzonestotales .restar,
+  .garzonestotales .sumar,
+  .garzonestotales .garzones__en--turno {
+    display: block; /* Hace que cada elemento esté en una línea */
+     /* Centra los elementos horizontalmente */
+  }
+}
+
+input{
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+ .inicio22{
+    padding-top: 0.1%;
+    background-color: #F9E79F;
+    margin: 2%;
+    padding-left: 1%;
+    min-height: 100%;
+    
+    
+    
+ }
+
+
+
+h1{
+    text-align: center;
+    font-family:'mifuente';
+    color: #873600;
+    font-size: 50px;
+}
+
+.montos{
+    align-content: center;
+    text-align: center;
+    
+    }
+
+.montos__totales{
+    color: black;
+
+
+}
+
+.input:focus{
+    border:  black 5px inset;
+    background: #f5fff5;
+    text-align:center;
+   }
+
+
+
+
+.sumar{
+    border-radius:5px;
+}
+
+.restar{
+    border-radius: 5px;
+}
+
+
+.garzones__en--turno:focus{
+    border:  black 5px inset;
+    background: #f5fff5;
+    text-align:center;
+}
+
+.garzones__en--turno2{
+    border-color: #873600;
+  border-width: 5px;
+  border-style: ridge;
+}
+
+
+.hola2{
+	color: black;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+    
+
+.itm{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btn{
+border: none;
+outline: none;
+border-radius: 8px;
+cursor: pointer;
+background-color: #873600;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  
+ 
+}
+
+.btn1{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #873600;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+     
+    }
+
+.totales_ganados{
+    background-color: #F9E79F;
+    margin: 2%; 
+    
+}
+
+.input2{
+    width: 100px;
+}
+
+.coci_gar{
+    align-content: center;
+    text-align: center;
+    margin: 8px;
+    font-family:'mifuente';
+    color: #873600;
+    font-size: 35px;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-content {
+    background-color: #F9E79F;
+    margin: 1% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 92%;
+    
+  }
+
+  #myModal:not([style*="display: block"]) {
+    display: none !important;
+  }
+
+.animate__animated.animate__flip{
+    --animate-duration: 1.5s;
+}
+
+label{
+  width: 70px;
+  display: inline-block;
+}
